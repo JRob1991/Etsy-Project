@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>SAMPLE PROJECT</title>
+  <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="row">
+  <div class="left">
+    <div class="panel p-xs-2 mb-xs-4">
+      <div class="mb-xs-3 pb-xs-3 bb-xs-1 filter-chrome">
+        <div class="clear">
+          <ul class="list-unstyled">
+            <li class="pb-categories">
+              <a href="https://www.etsy.com/search?q=football" class="all-categories">
+                <span>All Categories</span>
+              </a>
+            </li>
+            <li class="pb-categories pl-categories">
+              <a href="https://www.etsy.com/search/clothing?q=football">
+                <span>Clothing</span>
+              </a>
+            </li>
+            <li class="pb-categories pl-categories">
+              <a href="https://www.etsy.com/search/accessories?q=football">
+                <span>Accessories</span>
+              </a>
+            </li>
+            <li class="pb-categories pl-categories">
+              <a href="https://www.etsy.com/search/home-and-living?q=football">
+                <span>Home &amp; Living</span>
+              </a>
+            </li>
+            <li class="pb-categories pl-categories">
+              <a href="https://www.etsy.com/search/art-and-collectibles?q=football">
+                <span>Art &amp; Collectibles</span>
+              </a>
+            </li>
+            <li class="pb-categories pl-categories">
+              <a href="https://www.etsy.com/search/craft-supplies-and-tools?q=football">
+                <span>Craft Supplies &amp; Tools</span>
+              </a>
+            </li>
+            <li class="pb-categories pl-categories">
+              <a href="https://www.etsy.com/search/jewelry?q=football">
+                <span>Jewelry</span>
+              </a>
+            </li>
+            <li class="pb-categories pl-categories">
+              <a href="https://www.etsy.com/search/bath-and-beauty?q=football">
+                <span>Bath &amp; Beauty</span>
+              </a>
+            </li>
+            <li class="pb-categories pl-categories">
+              <a href="https://www.etsy.com/search/paper-and-party-supplies?q=football">
+                <span>Paper &amp; Party Supplies</span>
+              </a>
+            </li>
+            <li class="pb-categories pl-categories">
+              <a href="https://www.etsy.com/search/bags-and-purses?q=football">
+                <span>Bags &amp; Purses</span>
+              </a>
+            </li>
+            <li class="pb-categories pl-categories">
+              <a href="https://www.etsy.com/search/toys-and-games?q=football">
+                <span>Toys &amp; Games</span>
+              </a>
+            </li>
+            <li class="pb-categories pl-categories">
+              <a href="https://www.etsy.com/search/weddings?q=football">
+                <span>Weddings</span>
+              </a>
+            </li>
+            <li class="pb-categories pl-categories">
+              <a href="https://www.etsy.com/search/pet-supplies?q=football">
+                <span>Pet Supplies</span>
+              </a>
+            </li>
+            <li class="pb-categories pl-categories">
+              <a href="https://www.etsy.com/search/electronics-and-accessories?q=football">
+                <span>Electronics &amp; Accessories</span>
+              </a>
+            </li>
+            <li class="pb-categories pl-categories">
+              <a href="https://www.etsy.com/search/shoes?q=football">
+                <span>Shoes</span>
+              </a>
+            </li>
+            <li class="pl-categories">
+              <a href="https://www.etsy.com/search/books-movies-and-music?q=football">
+                <span>Books, Movies &amp; Music</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+  </div>
+</div>
+
+
+    <div class="right"></div>
+  </div>
+  <!--- rows template -->
+  <script type="text/html" id="rows-template">
+    <div>
+      <% _.each(results, function(result, i) { %>
+          <div class="result">
+            <div class="result-image" style="background-image: url('<%= result.Images[0]['url_570xN'] %>')">
+
+            </div>
+            <div class="result-description">
+              <p class="title"><%= result.title %></p>
+              <div>
+                <a href class="shop-name"><%= result.Shop.shop_name %></a href>
+                <span class="price">$<%= result.price %> USD</span>
+              </div>
+            </div>
+          </div>
+      <% }); %>
+    </div>
+  </script>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/lodash/lodash.min.js"></script>
+  <script src="js/etsy-api.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
