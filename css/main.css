@@ -6,11 +6,33 @@ html {
 *::before {
   box-sizing: inherit; }
 
+body {
+  font-family: 'Lato', sans-serif; }
+
+#etsy-logo {
+  font-size: 40px; }
+  #etsy-logo a {
+    color: #F76400; }
+
+.nav-border {
+  border: solid #DCDCD9 1px;
+  background: white; }
+  .nav-border li {
+    display: inline-block;
+    padding-right: 15px;
+    font-size: 15px;
+    color: #555;
+    padding-left: 10px; }
+
 li {
   list-style: none;
   text-align: left;
   font-size: 13px;
   color: #1CA3C2; }
+
+h1 {
+  font-size: 12px;
+  font-color: #555; }
 
 .all-categories {
   padding-bottom: 10px;
@@ -33,7 +55,7 @@ a {
   padding-top: 3px; }
 
 .pb-categories {
-  padding-left: 2px; }
+  padding-left: 0px; }
 
 .panel {
   border-radius: 3px;
@@ -42,6 +64,91 @@ a {
   border-bottom-color: #CBCCC9;
   margin: 0 0 12px; }
 
+.total-results {
+  padding-bottom: 8px; }
+
+.greater-then {
+  color: #606060;
+  text-decoration: none !important; }
+
+.football-results {
+  color: #606060;
+  text-decoration: none !important; }
+
+.football {
+  color: black;
+  text-decoration: none !important;
+  padding: 3px; }
+
+.favorites-burger {
+  float: right;
+  padding-right: 5px;
+  padding-top: 5px; }
+  .favorites-burger img {
+    width: 10px; }
+
+.item-type {
+  padding-left: 10px; }
+  .item-type a {
+    font-size: 16px; }
+
+.item-type-list {
+  padding-bottom: 3px;
+  font-size: bold 10px; }
+  .item-type-list a {
+    color: #1CA3C2; }
+
+.border {
+  border-top: 1px solid #E1E3DF;
+  width: 200px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 6px; }
+
+.border-header {
+  border-top: 1px solid #E1E3DF;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px; }
+
+.border-header-b {
+  border-top: 1px solid white;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 24px; }
+
+.list-inline-item {
+  display: inline-block; }
+
+.button-colors {
+  size: 20px; }
+
+.box-colors {
+  padding-left: 7px; }
+  .box-colors input {
+    border: 1px solid #e2e2e2;
+    border-radius: 3px;
+    height: 22px;
+    width: 22px;
+    padding: 1px;
+    overflow: hidden; }
+  .box-colors .red-button {
+    background-color: #f40b32; }
+  .box-colors .orange-button {
+    background-color: #ff7f00; }
+  .box-colors .yellow-button {
+    background-color: #f3cc0c; }
+  .box-colors .green-button {
+    background-color: #0ac20a; }
+  .box-colors .blue-button {
+    background-color: #00CCF5; }
+  .box-colors .purple-button {
+    background-color: #a60cf3; }
+  .box-colors .black-button {
+    background-color: #000000; }
+  .box-colors .white-button {
+    background-color: #ffffff; }
+
 body {
   background: #F5F5F1; }
 
@@ -49,16 +156,35 @@ body {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 23.23176%; }
+  width: 23.23176%;
+  padding-left: 50px;
+  width: 22%; }
   .left:last-child {
     margin-right: 0; }
+  .left form {
+    height: 650px; }
 
 .right {
   float: left;
   display: block;
   margin-right: 2.35765%;
-  width: 74.41059%; }
+  width: 74.41059%;
+  padding-left: 20px;
+  width: 65%; }
   .right:last-child {
+    margin-right: 0; }
+
+.bottom-left {
+  float: left;
+  display: block;
+  margin-right: 2.35765%;
+  width: 31.76157%;
+  background-color: black; }
+  .bottom-left:nth-child(3n) {
+    margin-right: 0; }
+  .bottom-left:nth-child(3n+1) {
+    clear: left; }
+  .bottom-left:last-child {
     margin-right: 0; }
 
 .shop-name {
@@ -72,6 +198,82 @@ body {
   color: #7CC541;
   padding-top: 1px;
   padding-bottom: 2px; }
+
+.pricing {
+  padding-left: 7px; }
+
+.search-price {
+  padding-left: 7px;
+  display: inline-flex; }
+  .search-price input {
+    width: 60px;
+    padding-left: 5px; }
+
+.ordering-options {
+  padding-left: 7px; }
+  .ordering-options label {
+    display: block; }
+  .ordering-options a {
+    color: #1BA8C7; }
+
+.shop-location {
+  padding-left: 7px; }
+  .shop-location label {
+    display: block;
+    padding: 2px; }
+  .shop-location a {
+    color: #1BA8C7; }
+
+.ship {
+  padding-left: 7px; }
+
+select {
+  width: 200px;
+  padding-bottom: 15px; }
+
+.to {
+  padding: 5px; }
+
+.footer-related {
+  clear: both; }
+  .footer-related ul {
+    padding: 0;
+    margin-right: 10px; }
+  .footer-related li {
+    font-size: 15px; }
+  .footer-related h2 {
+    color: #AEAEAE;
+    font-size: 20px; }
+  .footer-related span {
+    text-decoration: none !important;
+    color: #595959 !important; }
+  .footer-related a {
+    color: #1BA8C7; }
+
+.related {
+  float: left;
+  margin-right: 10px; }
+
+.more-shops {
+  clear: both; }
+  .more-shops span {
+    color: black !important; }
+  .more-shops a {
+    color: #1BA8C7; }
+
+.page-nav {
+  padding-top: 7px;
+  padding-left: 15px; }
+  .page-nav button {
+    font-size: 0.9em;
+    font-weight: bold;
+    color: grey;
+    background-color: white;
+    border: 1px solid lightgrey;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    margin-right: -6px; }
 
 .result {
   float: left;

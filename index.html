@@ -4,16 +4,82 @@
   <title>SAMPLE PROJECT</title>
   <link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
 </head>
 <body>
 
+<div class="nav-border" style="height: 152px;">
+
+<ul>
+<li>
+<div id="etsy-logo" class="apply-nav-height">
+<a href="/?ref=lgo">Etsy</a>
+</div>
+</li>
+<li>
+<form class="search-bar">
+<input class="search-input" type="text" placeholder="Search for items">
+<button class="searchButton">Search</button>
+</form>
+</li>
+<li>
+<div class="topbar">
+</li>
+
+<li>
+<span class="sell-on">Sell on Etsy</span>
+</li>
+
+<li>
+
+<nav class="topBarNav">
+<!-- add a link -->
+
+
+<div class="top-right-icons">
+<ul>
+<li>
+<div class="iconblocks"> <span> <img src="http://i.imgur.com/i2wuXmi.png"><br>Home</span></div>
+</li>
+<li>
+<div class="iconblocks"> <span> <img src="http://i.imgur.com/EhrpzUf.png"><br>Favorites</span></div>
+</li>
+</ul>
+</div>
+</nav>
+</li>
+
+  <!-- Border -->
+  <div class="border-header"></div>
+
+
+  <nav class="nav-bar">
+    <ul>
+      <li>Clothing &amp; Accessories</li>
+      <li>Jewelry</li>
+      <li>Crafts Supplies &amp; Tools</li>
+      <li>Weddings</li>
+      <li>Entertainment</li>
+      <li>Home &amp; Living</li>
+      <li>Kids &amp; Baby</li>
+      <li>Vintage</li>
+    </ul>
+  </nav>
+<div>
+
+  <!-- Border -->
+  <div class="border-header-b"></div>
+
+
+<!-- All Categories -->
 <div class="row">
   <div class="left">
-    <div class="panel p-xs-2 mb-xs-4">
+  <h1>Show Results For:</h1>
+    <div class="panel pl mb">
       <div class="mb-xs-3 pb-xs-3 bb-xs-1 filter-chrome">
         <div class="clear">
           <ul class="list-unstyled">
-            <li class="pb-categories">
+            <li class="pb-xs-1 ">
               <a href="https://www.etsy.com/search?q=football" class="all-categories">
                 <span>All Categories</span>
               </a>
@@ -88,27 +154,181 @@
                 <span>Shoes</span>
               </a>
             </li>
-            <li class="pl-categories">
+            <li class=" pl-xs-2">
               <a href="https://www.etsy.com/search/books-movies-and-music?q=football">
                 <span>Books, Movies &amp; Music</span>
               </a>
             </li>
           </ul>
         </div>
+      </div>
+    </div>
+    <div class="panel p-xs-2 mb-xs-2">
+    <form id="search-filter-reset-form">
+
+<!-- Item Type -->
+<div class="item-type">
+      <p class="">Item Type</p>
+  <div class="item-type-list">
+    <input type="radio" name="item_type" checked="checked">
+      <a href="#" class="">All Items</a>
+  </div>
+  <div class="item-type-list">
+    <input type="radio" name="item_type" value="handmade">
+      <a href="#">Handmade</a>
+  </div>
+  <div class="item-type-list">
+    <input type="radio" name="item_type" value="vintage" class="radio" data-form-type="url">
+      <a href="#">Vintage</a>
+  </div>
+</div>
+
+    <!-- Border -->
+<div class="border"></div>
+
+
+        <!-- Price -->
+<div>
+  <div class="clear">
+
+      <p class="pricing">Price</p>
+			<div class="search-price">
+				<div>$<input type="search" placeholder="Low"></div>
+        <span class="to">to</span>
+				<div>$<input type="search" placeholder="High"></div>
+				<button class="price-update"></button>
+			</div>
+
+        </div>
+    </div>
+
+    <!-- Border -->
+    <div class="border"></div>
+
+          <!-- Color Filter -->
+
+    <div class="box-colors">
+      <p class="strong mb-xs-1">Filter by Color</p>
+      <input type="button" class="red-button" value="">
+      <input type="button" class="orange-button" value="">
+      <input type="button" class="yellow-button" value="">
+      <input type="button" class="green-button" value="">
+      <input type="button" class="blue-button" value="">
+      <input type="button" class="purple-button" value="">
+      <input type="button" class="black-button" value="">
+      <input type="button" class="white-button" value="">
+    </div>
+
+    <!-- Border -->
+    <div class="border"></div>
+
+    <!-- Ordering Options -->
+<div class="ordering-options filter-chrome">
+      <p>Ordering Options</p>
+  <div class="clear">
+      <label>
+        <input type="checkbox" name="gift_card" value="true" class="checkbox">
+          <a href="https://www.etsy.com/search?q=football&amp;gift_card=true" class="checkbox-label ">Accepts Etsy Gift Cards</a>
+      </label>
+      <label>
+        <input type="checkbox" name="customizable" value="true" class="checkbox">
+          <a href="https://www.etsy.com/search?q=football&amp;customizable=true" class="checkbox-label ">Customizable</a>
+    </label>
+  </div>
+</div>
+
+
+            <div class="mb-xs-3 pb-xs-3 bb-xs-1 filter-chrome">
+        <div class="clear">
+
+        </div>
+    </div>
+            <div class="mb-xs-3 pb-xs-3 bb-xs-1 filter-chrome">
+        <div class="clear">
+
+        </div>
+    </div>
+
+    <!-- Border -->
+    <div class="border"></div>
+
+    <!-- Shop Location -->
+
+<div class="shop-location">
+            <p class="strong mb-xs-1">Shop Location</p>
+  <div class="clear">
+  <div class="container">
+  <div>
+      <label class="radio-custom">
+        <input type="radio" name="locationQuery" class="radio" value="" checked="checked">
+          <a href="#">Anywhere</a>
+      </label>
+      <label class="radio-custom">
+        <input type="radio" name="locationQuery" class="radio" value="6252001">
+          <a href="#">United States</a>
+      </label>
+  </div>
+  <div>
+          <a class="location" href="#" class="change-location-query pb-lg-1">
+            Choose a custom location
+          </a>
+  </div>
+</div>
+
+<!-- Border -->
+<div class="border"></div>
+
+<!-- Ship To -->
+<div class="container display-none col-group col-flush position-relative">
+</div>
+        </div>
+    </div>
+
+            <div class="ship">
+            <p class="strong mb-xs-1">Ship To</p>
+        <div class="clear">
+
+<div class="locale-selector">
+    <select name="ship_to" class="select select-custom" id="ship_to_select">
+
+      <option value="US" selected="selected">United States</option>
+      <option value="UK">United Kingdom</option>
+    </select>
+</div>
+
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
 
-    <div class="right"></div>
-  </div>
-  <!--- rows template -->
+
+    <div class="right">
+          <!-- Results Total -->
+        <div class="total-results">
+          <span itemscope="" itemtype="http://data-vocabulary.org/Breadcrumb">
+            <a href="#" title="All Categories" itemprop="url" class=""><span itemprop="title">All Categories</span></a>
+          </span>
+          <span class="greater-then">></span>
+          <span class="football">&quot;football&quot;</span>
+          <span class="football-results">(253,961 Results)</span>
+        </div>
+    </div>
+  <!--- Rows Template -->
   <script type="text/html" id="rows-template">
     <div>
       <% _.each(results, function(result, i) { %>
           <div class="result">
             <div class="result-image" style="background-image: url('<%= result.Images[0]['url_570xN'] %>')">
-
+              <div class="favorites-burger">
+                <button type="button" class="button-fav">
+                  <img src="images/heart.png"/>
+                </button>
+                <button type="button" class="button-fav">
+                  <img src="images/hamburger.png"/>
+                </button>
+              </div>
             </div>
             <div class="result-description">
               <p class="title"><%= result.title %></p>
@@ -119,6 +339,75 @@
             </div>
           </div>
       <% }); %>
+
+<div class="footer-related">
+    <h2>Related to <span class="bold-football">football</span></h2>
+    <div class="related" style="margin-right: 12px;">
+        <ul>
+            <li>
+                <a href="#">football mom</a>
+            </li>
+            <li>
+                <a href="#">personalized football</a>
+            </li>
+            <li>
+                <a href="#">football shirts</a>
+            </li>
+            <li>
+                <a href="#">football girlfriend</a>
+            </li>
+        </ul>
+    </div>
+    <div class="related" style="margin-right: 12px;">
+        <ul>
+            <li>
+                <a href="#">football svg</a>
+            </li>
+            <li>
+                <a href="#">football jewelry</a>
+            </li>
+            <li>
+                <a href="#">football jersey</a>
+            </li>
+            <li>
+                <a href="#">sports</a>
+            </li>
+        </ul>
+    </div>
+    <div class="related">
+        <ul>
+            <li>
+                <a href="#">football embroidery design</a>
+            </li>
+            <li>
+                <a href="#">football applique design</a>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="more-shops">
+    <span class="shops-black">Looking for shops?</span>
+    <span class="shops">
+      <a href="#">footballArt</a>,
+      <a href="#">ElephanTees</a>,
+      <a href="#">FootballChucks</a>. </span>
+      <a href="#">See more.</a>
+</div>
+  <div class="page-nav">
+  			<button>&lt;</button>
+  			<button>1</button>
+  			<button>2</button>
+  			<button>3</button>
+  			<button>4</button>
+  			<button>5</button>
+  			<button>6</button>
+  			<button>7</button>
+  			<button>8</button>
+  			<button>...</button>
+  			<button>60</button>
+  			<button>&gt;</button>
+  		</div>
+
     </div>
   </script>
 
